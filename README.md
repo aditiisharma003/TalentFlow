@@ -4,7 +4,7 @@
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-talent--flow--plum--three.vercel.app-blue?style=flat-square)](https://talent-flow-plum-three.vercel.app)
 
-**Live App:** [https://talent-flow-plum-three.vercel.app](https://talent-flow-plum-three.vercel.app)
+**Live App:** [https://talent-flow-liard.vercel.app](https://talent-flow-liard.vercel.app/)
 
 TalentFlow is a modern, full-featured hiring pipeline management platform built with React, Vite, Redux Toolkit, and Tailwind CSS.
 
@@ -33,7 +33,7 @@ TalentFlow is a modern, full-featured hiring pipeline management platform built 
 
 This project is deployed and live at:
 
-👉 [https://talent-flow-plum-three.vercel.app](https://talent-flow-plum-three.vercel.app)
+👉 [https://talent-flow-liard.vercel.app](https://talent-flow-liard.vercel.app/)
 
 You can also deploy your own version to Vercel, Netlify, or any static hosting provider. For Vercel:
 
