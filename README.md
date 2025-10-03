@@ -33,7 +33,7 @@ TalentFlow is a modern, full-featured hiring pipeline management platform built 
 
 This project is deployed and live at:
 
-👉 [https://talent-flow-liard.vercel.app](https://talent-flow-liard.vercel.app/)
+[https://talent-flow-liard.vercel.app](https://talent-flow-liard.vercel.app/)
 
 You can also deploy your own version to Vercel, Netlify, or any static hosting provider. For Vercel:
 
