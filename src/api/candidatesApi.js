@@ -5,16 +5,33 @@ const API_BASE = "/api";
  * Get all candidates (with optional filters & pagination)
  * params: { search, stage, page, pageSize }
  */
+import candidatesRepo from "../persistence/candidatesRepo";
+
 export const getCandidates = async (params = {}) => {
+  // If running on Vercel/Netlify/static, use Dexie directly
+  if (typeof window !== "undefined" && window.location.hostname.endsWith("vercel.app")) {
+    const all = await candidatesRepo.getAll();
+    // Optionally filter by params.search, params.stage, etc.
+    let filtered = all;
+    if (params.search) {
+      const s = params.search.toLowerCase();
+      filtered = filtered.filter(
+        (c) => c.name.toLowerCase().includes(s) || c.email.toLowerCase().includes(s)
+      );
+    }
+    if (params.stage) {
+      filtered = filtered.filter((c) => c.stage === params.stage);
+    }
+    return { results: filtered, total: filtered.length, page: 1, pageSize: filtered.length };
+  }
+  // Default: use API (for local dev with MSW)
   const queryString = new URLSearchParams(params).toString();
   const response = await fetch(`${API_BASE}/candidates?${queryString}`);
-
   if (!response.ok) {
     const error = await response.json();
     throw new Error(error.message || "Failed to fetch candidates");
   }
-
-  return response.json(); // { results, total, page, pageSize }
+  return response.json();
 };
 
 /**
