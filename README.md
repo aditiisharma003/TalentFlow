@@ -50,7 +50,3 @@ You can also deploy your own version to Vercel, Netlify, or any static hosting p
 - `src/app/` — Redux store and slices
 - `src/api/` — API abstraction
 - `src/persistence/` — IndexedDB logic
-
-## License
-
-MIT
