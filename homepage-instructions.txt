@@ -1,0 +1,4 @@
+{
+  "homepage": "https://your-username.github.io/your-repo",
+  // ...existing fields
+}
