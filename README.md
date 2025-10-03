@@ -1,16 +1,56 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# TalentFlow
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-talent--flow--plum--three.vercel.app-blue?style=flat-square)](https://talent-flow-plum-three.vercel.app)
 
-## React Compiler
+**Live App:** [https://talent-flow-plum-three.vercel.app](https://talent-flow-plum-three.vercel.app)
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+TalentFlow is a modern, full-featured hiring pipeline management platform built with React, Vite, Redux Toolkit, and Tailwind CSS.
 
-## Expanding the ESLint configuration
+## Features
+- Manage jobs, candidates, and assessments in one place
+- Add, edit, and delete jobs and candidates
+- Build and preview assessments for candidates
+- Modern, responsive UI with beautiful design
+- Local persistence using IndexedDB (Dexie)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+1. **Install dependencies:**
+	```
+	npm install
+	```
+
+2. **Run the development server:**
+	```
+	npm run dev
+	```
+	The app will be available at [http://localhost:5173](http://localhost:5173) (or another port if 5173 is in use).
+
+
+## Deployment
+
+This project is deployed and live at:
+
+👉 [https://talent-flow-plum-three.vercel.app](https://talent-flow-plum-three.vercel.app)
+
+You can also deploy your own version to Vercel, Netlify, or any static hosting provider. For Vercel:
+
+1. Push your code to GitHub.
+2. Go to [https://vercel.com/](https://vercel.com/) and import your repository.
+3. Click "Deploy". Vercel will auto-detect the Vite/React setup.
+4. Share your live link!
+
+## Project Structure
+
+- `src/` — Main source code
+- `src/pages/` — App pages (Home, Jobs, Candidates, Assessments)
+- `src/components/` — Reusable UI components
+- `src/app/` — Redux store and slices
+- `src/api/` — API abstraction
+- `src/persistence/` — IndexedDB logic
+
+## License
+
+MIT
